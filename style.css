@@ -1,0 +1,78 @@
+.content {
+  display: flex;
+  width: 85vw;
+  justify-content: center;
+  gap: 30px;
+}
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.panel {
+  display: flex;
+  align-items: end;
+  justify-content: right;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 80px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+ 
+}
+h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.active {
+  flex: 5;
+  opacity: 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+body{
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+@media screen and (max-width: 992px) {
+  .content {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 430px) {
+  .tom {
+    display: none;
+  }
+}
+@media screen and (min-width: 990px) {
+  .tom {
+    display: none;
+  }
+}
